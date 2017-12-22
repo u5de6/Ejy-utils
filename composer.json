@@ -1,0 +1,12 @@
+{
+    "name": "ejiayou/ejy-utils",
+    "description": "易加油工具",
+    "authors": [
+        {
+            "name": "pepe",
+            "email": "zuopei@ejiayou.com"
+        }
+    ],
+    "require": { "php": ">=5.3.0" },
+    "autoload": { "psr-4": { "EjyUtils": "src/" } }
+}
