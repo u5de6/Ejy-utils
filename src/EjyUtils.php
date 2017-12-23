@@ -49,7 +49,6 @@ class EjyUtils{
             $encrypted = openssl_encrypt($encrypt, 'AES-128-ECB',$key,OPENSSL_RAW_DATA,$iv);
             return bin2hex($encrypted);
         }catch(\Exception $e){
-            LogUtils::info("执行出现异常：：".$encrypt);
             return $encrypt;
         }
     }
@@ -66,7 +65,6 @@ class EjyUtils{
             $iv = openssl_random_pseudo_bytes(0);
             return openssl_decrypt($decoded, 'AES-128-ECB',$key,OPENSSL_RAW_DATA,$iv);
         }catch(\Exception $e){
-            LogUtils::info("执行出现异常：：".$decrypt);
             return $decrypt;
         }
     }
